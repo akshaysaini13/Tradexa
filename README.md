@@ -1,9 +1,11 @@
 # Tradexa
 A mini project that has two separate apps and is handled by two different databases.
-
+<ul>
 Admin credentials:
-username: akshaysaini
-password: akshaysaini
+  <li>username: akshaysaini </li>
+  <li>password: akshaysaini </li>
+
+</ul>
 
 ProductApp handles product model.
 Both app uses two separate databases(both Sqlite in this project)
