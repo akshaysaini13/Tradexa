@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+
+    <form action="/registerform" method='post'>
+        {% csrf_token %}
+        <p><label for="id_username">Enter first name:</label> <input type="text" name="first_name" required id="id_first_name"></p>
+        <p><label for="id_username">Enter last name:</label> <input type="text" name="last_name" required id="id_last_name"></p>
+        <p><label for="id_username">Enter email:</label> <input type="text" name="email" required id="id_email"></p>
+        <p><label for="id_username">Enter Username:</label> <input type="text" name="username" required id="id_username"></p>
+        <p><label for="id_password">Enter Password:</label> <input type="password" name="password" maxlength="32" required id="id_password"></p>
+        
+        <button type='submit'>Register</button>
+    </form>
+</body>
+</html>
